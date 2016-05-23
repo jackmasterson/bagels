@@ -5,13 +5,38 @@
     <title>The Bagel Place - Best Bagels in Brielle</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-	  <link rel="stylesheet" href="css/style.css">
+	  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <h1>Up and Running!</h1>
+  <div class="shade">
+    <h2 class="address" data-bind="text: model.genInfo.address"></h2>
+    <img class="head-img" src="img/newlogo.gif">
+    <h1 class="catchy">Come for the Coffee, Stay for the Friends</h1>
+    <h3 class="hours">Open Seven Days</h3>
+    <h4>
+      <a data-bind="click: toggle.schedule">Hours</a>
+    </h4>
+    <div class="hours-ul" data-bind="foreach: model.genInfo.schedule">
+      <br>
+      <span class="hours-day" data-bind="text: day"></span>
+      <span class="hours-span" data-bind="text: hours"></span>
+    </div>
+  </div>
+  <div class="head-div">
+    <div class="nav-div">
+      <ul class="head-nav-ul" data-bind="foreach: model.nav">
+        <li class="head-nav-li">
+          <a target="_blank" data-bind="text: item, attr: { href: href }"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <script src="js/lib/knockout-3.2.0.js"></script>
   <script src="js/lib/jquery.js"></script>
   <script src="js/lib/jquery-ui.min.js"></script>
+  <script src="js/lib/chocolate/jquery.chocolate.js"></script>
+
   <script src="js/script.js"></script>
 </body>
 </html>

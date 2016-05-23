@@ -31,6 +31,9 @@
       </ul>
     </div>
   </div>
+  <div class="everything-else" data-bind="foreach: model.nav">
+    <h1 data-bind="text: item"></h1>
+  </div>
 
   <script src="js/lib/knockout-3.2.0.js"></script>
   <script src="js/lib/jquery.js"></script>

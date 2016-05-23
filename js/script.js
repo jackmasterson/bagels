@@ -27,7 +27,7 @@ var model = {
 		},
 		{
 			item: 'Shop Around',
-			href: '#/'
+			href: 'http://www.turnstilecoffeeroasters.com/'
 		},
 		{
 			item: 'Shop Some More',
@@ -35,15 +35,15 @@ var model = {
 		},
 		{
 			item: 'Newsletter',
-			href: '#/'
+			href: 'http://www.turnstilecoffeeroasters.com/mailinglist_subscribe.asp'
 		},
 		{
 			item: 'About Us',
-			href: '#/'
+			href: 'http://www.turnstilecoffee.com/about.php'
 		},
 		{
 			item: 'Contact',
-			href: '#/'
+			href: 'http://www.turnstilecoffee.com/contact.php'
 		}
 	]
 

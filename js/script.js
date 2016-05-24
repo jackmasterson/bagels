@@ -23,27 +23,49 @@ var model = {
 	nav: [
 		{
 			item: 'Home',
-			href: '#/'
+			href: '#/',
+			id: ko.observable('home'),
+			par: "At vero eos et accusamus et iusto odio dignissimos"+
+			" ducimus qui blanditiis praesentium voluptatum deleniti atque"+
+			" corrupti quos dolores et quas molestias excepturi sint"+
+			" occaecati cupiditate non provident, similique sunt in"+
+			" culpa qui officia deserunt mollitia animi, id est laborum"+
+			" et dolorum fuga. Et harum quidem"
+		},
+		{
+			item: 'Philosophy',
+			href: '#/',
+			id: ko.observable('philosophy'),
+			par: "Lorem ipsum dolor sit amet, consectetur adipiscing"+
+			" elit, sed do eiusmod tempor incididunt ut labore et dolore"+
+			" magna aliqua. Ut enim ad minim veniam, quis nostrud"+
+			" exercitation ullamco laboris nisi ut aliquip ex ea commodo"+
+			" consequat. Duis aute irure dolor in reprehenderit in voluptate"+
+			" velit esse cillum dolore eu"
 		},
 		{
 			item: 'Shop Around',
-			href: 'http://www.turnstilecoffeeroasters.com/'
-		},
-		{
-			item: 'Shop Some More',
-			href: '#/'
+			href: 'http://www.amazon.com',
+			id: ko.observable('shop'),
+			par: ko.observable('')
 		},
 		{
 			item: 'Newsletter',
-			href: 'http://www.turnstilecoffeeroasters.com/mailinglist_subscribe.asp'
+			href: '#/',
+			id: ko.observable('newsletter'),
+			par: 'Filler text'
 		},
 		{
 			item: 'About Us',
-			href: 'http://www.turnstilecoffee.com/about.php'
+			href: '#/',
+			id: ko.observable('about'),
+			par: 'Filler text'
 		},
 		{
 			item: 'Contact',
-			href: 'http://www.turnstilecoffee.com/contact.php'
+			href: '#/',
+			id: ko.observable('contact'),
+			par: 'Filler text'
 		}
 	]
 
@@ -52,14 +74,26 @@ var model = {
 var viewModel = {
 	init: function() {
 		slider.init();
+		toggle.philosophy();
 	}
 };
 
 var toggle = {
+	
 	schedule: function() {
 		$('.hours-ul').slideToggle();
+	},
+
+	philosophy: function() {
+		$('#philosophy').click(function(){
+			console.log('philsosophyhyhy');
+		//	$('.phil-div').slideToggle();
+		});
 	}
-}
+};
+
+var philo = document.getElementById('philosophy');
+console.log(philo);
 
 
 /**** slider credit goes to kentowatanabe, found at: 
@@ -70,7 +104,7 @@ var slider = {
 	
 	init: function() {
 		$('.head-div').chocolate({
-			images    : ['img/coffee-back.jpg', 'img/meetup.jpg', 'img/book.jpeg'],
+			images    : ['img/coffee-desk.jpg', 'img/meetup.jpg', 'img/book.jpeg'],
 			interval : 3500,
 			speed: 1000
 		});

@@ -2,15 +2,14 @@
 <html lang="en">
 
 <head>
-    <title>The Bagel Place - Best Bagels in Brielle</title>
+    <title>The Bagel Place - Best Bagels in Belmar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
 	  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <div class="shade">
-    <h2 class="address" data-bind="text: model.genInfo.address"></h2>
-    <img class="head-img" src="img/newlogo.gif">
+    <img class="head-img" src="img/filler-logo.png">
     <h1 class="catchy">Come for the Coffee, Stay for the Friends</h1>
     <h3 class="hours">Open Seven Days</h3>
     <h4>
@@ -26,13 +25,14 @@
     <div class="nav-div">
       <ul class="head-nav-ul" data-bind="foreach: model.nav">
         <li class="head-nav-li">
-          <a target="_blank" data-bind="text: item, attr: { href: href }"></a>
+          <a taret="_blank" data-bind="text: item, attr: { href: href }"></a>
         </li>
       </ul>
     </div>
   </div>
   <div class="everything-else" data-bind="foreach: model.nav">
     <h1 data-bind="text: item"></h1>
+    <p data-bind="text: par"></p>
   </div>
 
   <script src="js/lib/knockout-3.2.0.js"></script>

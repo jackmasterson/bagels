@@ -2,14 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>The Bagel Place - Best Bagels in Belmar</title>
+    <title>The Coffee Place - Cool Coffee, Cooler People</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
 	  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <div class="shade">
-    <img class="head-img" src="img/filler-logo.png">
+  <div class="shade-two">
     <h1 class="catchy">Come for the Coffee, Stay for the Friends</h1>
     <h3 class="hours">Open Seven Days</h3>
     <h4>
@@ -21,7 +20,8 @@
       <span class="hours-span" data-bind="text: hours"></span>
     </div>
   </div>
-  <div class="head-div">
+  <div class="shade">
+    <img class="head-img" src="img/filler-logo.png">
     <div class="nav-div">
       <ul class="head-nav-ul" data-bind="foreach: model.nav">
         <li class="head-nav-li">
@@ -29,6 +29,9 @@
         </li>
       </ul>
     </div>
+  </div>
+  <div class="head-div">
+
   </div>
   <div class="everything-else" data-bind="foreach: model.nav">
     <h1 data-bind="text: item"></h1>

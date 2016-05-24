@@ -41,10 +41,19 @@ p {
 
 .shade {
 	position: absolute;
-	background-color: rgba(0,0,0,0.6);
+	background-color: rgba(0,0,0,0.8);
 	z-index: 5;
 	height: 100vh;
-	width: 30vw;
+	width: 20vw;
+}
+
+.shade-two {
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 5;
+	height: 100vh;
+	width: 80vw;
+	left: 20vw;
 }
 
 .catchy {
@@ -82,35 +91,27 @@ p {
 }
 
 .head-img {
-	height: 100px;
-	width: 275px;
-	top: 75vh;
-	left: 65vw;
+	height: 50px;
+	width: 125px;
 	position: absolute;
-
-	z-index: 5;
+	right: 10vw;
+	z-index: 10;
 }
 
 .fold-div {
 	margin: 2%;
 }
 
-.nav-div {
-	background: rgba(0,0,0,0.6);
-	height: 5vh;
-	position: absolute;
-	width: 100vw;
-	z-index: 5;
-	top: 0;
-	height: 8vh;
+.head-nav-ul {
+	padding: 0;
 }
 
-.head-nav-ul {
-	margin-left: 25vw;
+.nav-div {
+	margin-top: 15vh;
 }
+
 
 .head-nav-li {
-	display: inline-block;
-	margin: 2% 5% 2% 0%;
-	font-size: 15px;
+	margin-top: 8vh;
+	font-size: 20px;
 }

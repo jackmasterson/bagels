@@ -29,6 +29,11 @@
           <a taret="_blank" data-bind="text: item, attr: { href: href }"></a>
         </li>
       </ul>
+      <ul class="contact-div" data-bind="foreach: model.contact">
+        <li class="contact-li" data-bind="text: email"></li>
+        <li class="contact-li" data-bind="text: phone"></li>
+        <li class="contact-li" data-bind="text: directions"></li>
+      </ul>
     </div>
   </div>
   <div class="head-div"></div>

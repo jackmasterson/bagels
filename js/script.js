@@ -67,6 +67,13 @@ var model = {
 			id: ko.observable('contact'),
 			par: 'Filler text'
 		}
+	],
+	contact: [
+		{
+			email: 'youremailhere@notarealemail.com',
+			phone: '(xxx) xxx-xxxx',
+			directions: 'google.com/maps'
+		}	
 	]
 
 };

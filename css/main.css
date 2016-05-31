@@ -85,6 +85,10 @@ p {
 	font-style: none;
 }
 
+.coffee-img {
+	height: 200px;
+	width: 200px;
+}
 
 .head-header {
 	background: #ccc;
@@ -94,7 +98,8 @@ p {
 	height: 50px;
 	width: 125px;
 	position: absolute;
-	right: 10vw;
+	right: 4vw;
+	top: 2vh;
 	z-index: 10;
 }
 

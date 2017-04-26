@@ -8,7 +8,7 @@ var model = {
 			schedule: [
 				{
 					day: 'Mon-Sat',
-					hours: '7am-3pm' 
+					hours: '7am-3pm'
 				},
 				{
 					day: 'Sun',
@@ -34,7 +34,7 @@ var model = {
 		},
 		{
 			item: 'Philosophy',
-			href: '#/',
+			href: 'http://www.cranesinc.com/about-us',
 			id: ko.observable('philosophy'),
 			par: "Lorem ipsum dolor sit amet, consectetur adipiscing"+
 			" elit, sed do eiusmod tempor incididunt ut labore et dolore"+
@@ -44,8 +44,8 @@ var model = {
 			" velit esse cillum dolore eu"
 		},
 		{
-			item: 'Shop Around',
-			href: 'http://www.amazon.com',
+			item: 'Services',
+			href: 'http://www.cranesinc.com/services',
 			id: ko.observable('shop'),
 			par: ko.observable('')
 		},
@@ -73,7 +73,7 @@ var model = {
 			email: 'youremailhere@notarealemail.com',
 			phone: '(xxx) xxx-xxxx',
 			directions: 'google.com/maps'
-		}	
+		}
 	]
 
 };
@@ -86,32 +86,32 @@ var viewModel = {
 };
 
 var toggle = {
-	
+
 	schedule: function() {
 		$('.hours-ul').slideToggle();
 	},
 
 	philosophy: function() {
 		$('#philosophy').click(function(){
-			console.log('philsosophyhyhy');
+			//console.log('philsosophyhyhy');
 		//	$('.phil-div').slideToggle();
 		});
 	}
 };
 
 var philo = document.getElementById('philosophy');
-console.log(philo);
+//console.log(philo);
 
 
-/**** slider credit goes to kentowatanabe, found at: 
+/**** slider credit goes to kentowatanabe, found at:
  	[http://www.jqueryscript.net/demo/Simplest-Fullscreen
  		-Background-Slideshow-With-jQuery-Chocolate-js/]
  */
 var slider = {
-	
+
 	init: function() {
 		$('.head-div').chocolate({
-			images    : ['img/coffee-desk.jpg', 'img/meetup.jpg', 'img/book.jpeg'],
+			images    : ['img/crane-sunset.jpeg', 'img/crane-nyc.jpg', 'img/crane-cloud.jpg'],
 			interval : 3500,
 			speed: 1000
 		});

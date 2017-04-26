@@ -2,19 +2,16 @@
 <html lang="en">
 
 <head>
-    <title>The Coffee Place - Cool Coffee, Cooler People</title>
+    <title>Rent Cranes NYC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
 	  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <div class="shade-two">
-    <h1 class="catchy">Come for the Coffee, Stay for the Friends</h1>
-    <img class="coffee-img" src="img/coffee-cup.png">
-    <h3 class="hours">Open Seven Days</h3>
-    <h4>
-      <a data-bind="click: toggle.schedule">Hours</a>
-    </h4>
+    <h1 class="catchy">Need a Crane?</h1>
+    <img class="coffee-img" src="img/hardhat.png">
+    <h3 class="hours">We won't leave you hanging.</h3>
     <div class="hours-ul" data-bind="foreach: model.genInfo.schedule">
       <br>
       <span class="hours-day" data-bind="text: day"></span>
@@ -26,7 +23,7 @@
     <div class="nav-div">
       <ul class="head-nav-ul" data-bind="foreach: model.nav">
         <li class="head-nav-li">
-          <a taret="_blank" data-bind="text: item, attr: { href: href }"></a>
+          <a target="_blank" data-bind="text: item, attr: { href: href }"></a>
         </li>
       </ul>
       <ul class="contact-div" data-bind="foreach: model.contact">
